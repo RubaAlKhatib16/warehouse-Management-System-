@@ -1,0 +1,129 @@
+/* User Edit Page Styling */
+body {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.panel {
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.panel-heading {
+    background: #2c3e50;
+    color: white;
+    border-radius: 8px 8px 0 0;
+    padding: 15px 20px;
+    border-bottom: none;
+}
+
+.panel-heading strong {
+    font-size: 1.2em;
+    letter-spacing: 0.5px;
+}
+
+.panel-body {
+    padding: 25px;
+    background: #fff;
+    border-radius: 0 0 8px 8px;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-control {
+    border: 2px solid #e9ecef;
+    border-radius: 6px;
+    padding: 10px 15px;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
+}
+
+label.control-label {
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.btn {
+    border-radius: 6px;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.btn-info {
+    background: #3498db;
+    border-color: #3498db;
+}
+
+.btn-info:hover {
+    background: #2980b9;
+    border-color: #2980b9;
+}
+
+.btn-danger {
+    background: #e74c3c;
+    border-color: #e74c3c;
+}
+
+.btn-danger:hover {
+    background: #c0392b;
+    border-color: #c0392b;
+}
+
+/* Center Form on Page */
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    padding: 0 15px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 20px;
+}
+
+.col-md-6 {
+    flex: 1;
+    min-width: 300px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .panel-body {
+        padding: 20px;
+    }
+}
+
+.alert {
+    border-radius: 6px;
+    margin: 20px 0;
+}
+
+select[name="status"] {
+    text-transform: capitalize;
+}
+
+.password-container {
+    position: relative;
+}
